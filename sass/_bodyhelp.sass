@@ -1,0 +1,52 @@
+.helpinfo
+    width: 100%
+    padding: 15px
+
+.helpinfotitle
+    width: 70%
+    float: left
+    padding: 10px
+    text-align: justify
+    h1 
+        font-size: 2em
+    p
+        font-size: 1.1em
+        text-align: justify
+
+.helpcontent
+    width: 30%
+    float: left
+    padding: 10px
+    background: $textlight
+    ul
+        list-style: none
+        font-size: 0.85em
+        li 
+            padding: 2px
+
+.helpinfocontent
+    padding: 10px
+    clear: both
+
+.hinfco
+    padding: 10px
+    background: $textlightcont
+    h3
+        font-size: 1.8em
+    ul
+        font-size: 1.1em
+        text-align: justify
+        list-style: none
+        li 
+            padding: 2px
+            a
+                text-decoration: none
+                color: $accentdark
+
+@media screen and (max-width:768px)
+    .helpcontent
+        display: none
+    .helpinfotitle
+        width: 100%
+    .helpinfo
+        padding: 5px

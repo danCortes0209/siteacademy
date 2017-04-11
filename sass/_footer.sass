@@ -1,0 +1,54 @@
+footer
+    position: relative
+    clear: both
+
+.listcontent 
+    position: absolute
+    background: $darkestcolor
+    width: 100%
+    height: 210px
+    padding: 8px
+
+.listsup,
+.listsdown 
+    width: 50%
+    padding: 15px
+    float: left
+
+.listacademy,
+.listaccount,
+.listcontact,
+.listhelp 
+    @extend .listsup
+    line-height: 30px
+    & li 
+        font-size: 1.05em
+        list-style: none
+        margin-bottom: 2px
+        a 
+            color: $textlight
+            text-decoration: none
+    h3
+        margin-bottom: 5px
+        color: $backgroundlight
+
+@media screen and(max-width: 787px)
+    .listcontent
+        height: 230px
+
+@media screen and(max-width: 638px)
+    .listcontent 
+        height: 400px
+    .listsup,
+    .listsdown
+        width: 100%
+    .listacademy,
+    .listaccount,
+    .listcontact,
+    .listhelp 
+        width: 50%
+
+@media screen and(max-width: 330px)
+    .listcontent
+        height: 450px
+        font-size: 0.85em

@@ -1,0 +1,63 @@
+.formregister
+    width: 100%
+    height: 520px
+.formreg
+    width: 60%
+    float: left
+.factsregis
+    width: 40%
+    float: left
+    padding: 20px
+.regisform
+    border: 1px solid $accent
+    position: relative
+    width: 50%
+    margin: auto
+    padding: 15px
+    margin: auto
+    margin-top: 40px
+    background: $textlightcont
+    h1
+        font-size: 2em
+        color: $darkestcolorcont
+    label
+        font-size: 1.2em
+    input
+        margin-top: 8px
+        font-size: 1.2em
+        padding: 5px
+        border-radius: 4px
+        border: 1px solid $accentlight
+        width: 100%
+        &:hover
+            border: 2px solid $inputhover
+    .btnregis
+        width: 38%
+        margin-top: 15px
+        padding: 15px
+    a
+        color: $accent
+        text-decoration: none
+.factsreg
+    margin-top: 20px
+    background: $textlight
+    padding: 10px
+    text-align: justify
+    line-height: 22px
+@media screen and(max-width: 1100px)
+    .regisform
+        width: 65%
+@media screen and(max-width: 950px)
+    .regisform
+        width: 75%
+@media screen and (max-width: 885px)
+    .factsregis 
+        display: none
+    .formreg
+        width: 100%
+@media screen and(max-width: 768px)
+    .regisform
+        width:  80%
+@media screen and(max-width: 380px)
+    .regisform
+        width: 98%

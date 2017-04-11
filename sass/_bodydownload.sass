@@ -1,0 +1,72 @@
+.headdownload
+    width: 100%
+    height: 230px
+    padding: 15px
+    background: $textlightcont
+
+.buttondownload
+    text-align: center
+    width: 40%
+    height: 100%
+    margin: auto
+    margin-top: 15px
+    h1
+        font-size: 2em
+        color: $darkestcolorcont
+    a 
+        padding: 15px
+        background: $accentdark
+        text-decoration: none
+        color: $textlight
+        border-radius: 5px
+        &:hover
+            background: $backgroundlight
+            color: $darkestcolor
+            border: 1px solid $accentdark
+
+.guide 
+    height: 300px
+    padding: 15px
+    .howtouse,
+    .howtoinstall
+        width: 50%
+        height: 100%
+        float: left
+        padding: 10px
+        background: $textlight
+        h3 
+            margin-top: 10px
+            width: 100%
+            text-align: center
+        p
+            margin-top: 10px
+        ol 
+            margin-top: 15px
+            list-style: none
+        a 
+            text-decoration: none
+            color: $accentdark
+
+@media screen and (max-width: 985px) 
+    .guide 
+        height: 340px
+
+@media screen and (max-width: 768px)
+    .guide 
+        height: 500px
+        .howtouse,
+        .howtoinstall 
+            width: 100%
+            height: 50%
+
+@media screen and (max-width: 550px)
+    .guide 
+        height: 560px
+
+@media screen and (max-width: 510px) 
+    .guide 
+        height: 600px
+
+@media screen and (max-width: 405px) 
+    .guide 
+        height: 700px

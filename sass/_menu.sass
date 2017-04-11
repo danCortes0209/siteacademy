@@ -1,0 +1,55 @@
+.menu_bar
+    display: none
+
+header 
+    width: 100%
+    height: 78px
+    nav 
+        @extend header
+        background: $darkestcolor
+        margin: auto
+        ul 
+            overflow: hidden
+            list-style: none
+            li 
+                float: left
+                text-align: center
+                a 
+                    color: $backgroundlight
+                    padding: 30px
+                    display: inline-block
+                    text-decoration: none
+
+@media screen and (max-width: 768px)
+    header
+        z-index: 1000
+        nav 
+            width: 80%
+            height: 100%
+            margin: 0
+            position: fixed
+            left: -100%
+            ul 
+                li 
+                    display: block
+                    float: none
+                    border-bottom: 1px solid rgba(255, 255, 255, .3)
+    .menu_bar
+        display: block
+        width: 100%
+        background: $buttonhoverbordercont
+        border-bottom: 1px solid rgba(255, 255, 255, .1)
+        .bt_menu
+            display: block
+            padding: 20px
+            background: $darkestcolor
+            color: $backgroundlight
+            text-decoration: none
+            font-weight: bold
+            font-size: 28px
+            --webkit-box-sizing: border-box
+            -moz-box-sizing: border-box
+            box-sizing: border-box
+            span 
+                float: right
+                font-size: 40px

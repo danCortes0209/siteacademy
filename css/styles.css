@@ -1,0 +1,141 @@
+* { font-family: Open serif, sans-serif; padding: 0px; margin: 0px; box-sizing: border-box; }
+
+.menu_bar { display: none; }
+
+header, header nav { width: 100%; height: 78px; }
+
+header nav { background: #006064; margin: auto; }
+
+header nav ul { overflow: hidden; list-style: none; }
+
+header nav ul li { float: left; text-align: center; }
+
+header nav ul li a { color: #B2EBF2; padding: 30px; display: inline-block; text-decoration: none; }
+
+@media screen and (max-width: 768px) { header, header nav { z-index: 1000; }
+  header nav { width: 80%; height: 100%; margin: 0; position: fixed; left: -100%; }
+  header nav ul li { display: block; float: none; border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
+  .menu_bar { display: block; width: 100%; background: #A7FFEB; border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
+  .menu_bar .bt_menu { display: block; padding: 20px; background: #006064; color: #B2EBF2; text-decoration: none; font-weight: bold; font-size: 28px; --webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+  .menu_bar .bt_menu span { float: right; font-size: 40px; } }
+
+.presentation { width: 60%; float: left; padding: 8px; font-size: 1.4em; text-align: center; }
+
+.headlogo { padding: 10px; background: #E0F7FA; }
+
+.phoneimagen { width: 40%; float: left; padding: 5px; }
+
+.imgcontainer { width: 50%; margin: auto; }
+
+.telephone { margin-top: 25px; height: 100%; max-height: 250px; }
+
+.linkscontainers { clear: both; width: 100%; padding: 5px; font-size: 1.2em; text-align: justify; }
+
+.moreabout, .gettheapp { width: 50%; padding: 10px; float: left; }
+
+.titleget, .titleabout { padding: 15px; background: #E0F2F1; }
+
+.titleget a, .titleabout a { text-align: center; padding: 10px; background: #00ACC1; text-decoration: none; color: #E0F7FA; border-radius: 5px; }
+
+.titleget a:hover, .titleabout a:hover { background: #B2EBF2; color: #006064; border: 1px solid #00ACC1; }
+
+@media screen and (max-width: 885px) { .phoneimagen { display: none; }
+  .presentation { width: 100%; font-size: 1.3em; }
+  .moreabout, .gettheapp { width: 100%; } }
+
+.helpinfo { width: 100%; padding: 15px; }
+
+.helpinfotitle { width: 70%; float: left; padding: 10px; text-align: justify; }
+
+.helpinfotitle h1 { font-size: 2em; }
+
+.helpinfotitle p { font-size: 1.1em; text-align: justify; }
+
+.helpcontent { width: 30%; float: left; padding: 10px; background: #E0F7FA; }
+
+.helpcontent ul { list-style: none; font-size: 0.85em; }
+
+.helpcontent ul li { padding: 2px; }
+
+.helpinfocontent { padding: 10px; clear: both; }
+
+.hinfco { padding: 10px; background: #E0F2F1; }
+
+.hinfco h3 { font-size: 1.8em; }
+
+.hinfco ul { font-size: 1.1em; text-align: justify; list-style: none; }
+
+.hinfco ul li { padding: 2px; }
+
+.hinfco ul li a { text-decoration: none; color: #00ACC1; }
+
+@media screen and (max-width: 768px) { .helpcontent { display: none; }
+  .helpinfotitle { width: 100%; }
+  .helpinfo { padding: 5px; } }
+
+.headdownload { width: 100%; height: 230px; padding: 15px; background: #E0F2F1; }
+
+.buttondownload { text-align: center; width: 40%; height: 100%; margin: auto; margin-top: 15px; }
+
+.buttondownload h1 { font-size: 2em; color: #004D40; }
+
+.buttondownload a { padding: 15px; background: #00ACC1; text-decoration: none; color: #E0F7FA; border-radius: 5px; }
+
+.buttondownload a:hover { background: #B2EBF2; color: #006064; border: 1px solid #00ACC1; }
+
+.guide { height: 300px; padding: 15px; }
+
+.guide .howtouse, .guide .howtoinstall { width: 50%; height: 100%; float: left; padding: 10px; background: #E0F7FA; }
+
+.guide .howtouse h3, .guide .howtoinstall h3 { margin-top: 10px; width: 100%; text-align: center; }
+
+.guide .howtouse p, .guide .howtoinstall p { margin-top: 10px; }
+
+.guide .howtouse ol, .guide .howtoinstall ol { margin-top: 15px; list-style: none; }
+
+.guide .howtouse a, .guide .howtoinstall a { text-decoration: none; color: #00ACC1; }
+
+@media screen and (max-width: 985px) { .guide { height: 340px; } }
+
+@media screen and (max-width: 768px) { .guide { height: 500px; }
+  .guide .howtouse, .guide .howtoinstall { width: 100%; height: 50%; } }
+
+@media screen and (max-width: 550px) { .guide { height: 560px; } }
+
+@media screen and (max-width: 510px) { .guide { height: 600px; } }
+
+@media screen and (max-width: 405px) { .guide { height: 700px; } }
+
+.bodyinfo { width: 100%; height: 500px; padding: 15px; }
+
+.factsinfo { width: 35%; float: left; text-align: justify; padding: 5px; }
+
+.whytoread { width: 65%; float: left; text-align: justify; padding: 5px; }
+
+.whyread, .factsin { padding: 10px; background: #E0F2F1; }
+
+.howmanytime, .howdoesitworks { width: 50%; float: left; text-align: justify; padding: 5px; }
+
+.time, .works { padding: 10px; background: #E0F7FA; }
+
+@media screen and (max-width: 1280px) { .bodyinfo { height: 600px; } }
+
+@media screen and (max-width: 999px) { .bodyinfo { height: 660px; } }
+
+@media screen and (max-width: 890px) { .bodyinfo { height: 700px; } }
+
+@media screen and (max-width: 840px) { .bodyinfo { height: 750px; } }
+
+@media screen and (max-width: 890px) { .bodyinfo { height: 800px; } }
+
+@media screen and (max-width: 768px) { .bodyinfo { height: 800px; }
+  .bodyinfo .factsinfo { display: none; }
+  .bodyinfo .whytoread, .bodyinfo .howmanytime, .bodyinfo .howdoesitworks { width: 100%; } }
+
+@media screen and (max-width: 720px) { .bodyinfo { height: 800px; } }
+
+@media screen and (max-width: 680px) { .bodyinfo { height: 850px; } }
+
+@media screen and (max-width: 650px) { .bodyinfo { height: 900px; } }
+
+@media screen and (max-width: 600px) { .bodyinfo { height: 1450px; } }

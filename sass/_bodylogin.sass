@@ -1,0 +1,73 @@
+.formcontent
+    height: 420px
+    position: relative
+
+.formi
+    width: 60%
+    height: 100%
+    float: left
+
+.factsabout
+    width: 40%
+    float: left
+    padding: 20px
+
+.inputsform
+    border: 1px solid $accent
+    position: relative
+    width: 50%
+    margin: auto
+    padding: 15px
+    margin: auto
+    margin-top: 40px
+    background: $textlightcont
+    h1
+        font-size: 2em
+        color: $darkestcolorcont
+    label
+        font-size: 1.2em
+    input
+        margin-top: 8px
+        font-size: 1.2em
+        padding: 5px
+        border-radius: 4px
+        border: 1px solid $accentlight
+        width: 100%
+        &:hover
+            border: 2px solid $inputhover
+    .btnlogin
+        width: 38%
+        margin-top: 15px
+        padding: 15px
+    a
+        color: $accent
+        text-decoration: none
+
+.factslog
+    margin-top: 20px
+    background: $textlight
+    padding: 10px
+    text-align: justify
+    line-height: 22px
+
+@media screen and(max-width: 1100px)
+    .inputsform
+        width: 65%
+            
+@media screen and(max-width: 950px)
+    .regisform
+        width: 75%
+
+@media screen and (max-width: 885px)
+    .factsabout 
+        display: none
+    .formi
+        width: 100%
+
+@media screen and(max-width: 768px)
+    .inputsform
+        width:  80%
+
+@media screen and(max-width: 380px)
+    .inputsform
+        width: 98%

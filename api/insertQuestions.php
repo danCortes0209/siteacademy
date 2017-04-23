@@ -9,12 +9,18 @@
     
     $statement = mysqli_prepare($con, "INSERT INTO question(ntext,content,ans1,ans2,ans3,ans4) VALUES (?,?,?,?,?,?)");
     mysqli_stmt_bind_param($statement, "isssss", $ntext, $ques, $ans1, $ans2, $ans3, $ans4);
-    mysqli_stmt_execute($statement);
+    $result = mysqli_stmt_execute($statement);
 
     $response = array();
-    $response["success"] = true;  
+    $response["success"] = false; 
+    if ($result) {
+        $response["success"] = true;  
+    } else {
+        $response["success"] = false; 
+    }
+    
     $res = array();
     $res[] = $response;
     
-    echo json_encode($res);
+    echo json_encode($res); 
 ?>
